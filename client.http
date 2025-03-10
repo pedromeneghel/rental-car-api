@@ -1,0 +1,21 @@
+@host = localhost:3333
+
+### Add customer
+POST http://{{host}}/customer
+Content-Type: application/json
+
+{
+  "name": "Pedro Meneghel",
+  "email": "pedromeneghel@email.com",
+  "document": "78548963214",
+  "street": "Rua Dez",
+  "number": "33",
+  "neighborhood": "Centro",
+  "zipcode": "18244111"
+}
+
+### Get customer
+GET http://{{host}}/customers/1b2a5a56-b7af-4c1a-999e-6c947fde7011
+
+### List customers
+GET http://{{host}}/customers
