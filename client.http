@@ -14,8 +14,5 @@ Content-Type: application/json
   "zipcode": "18244111"
 }
 
-### Get customer
+### Get customer by id
 GET http://{{host}}/customers/1b2a5a56-b7af-4c1a-999e-6c947fde7011
-
-### List customers
-GET http://{{host}}/customers
