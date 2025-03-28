@@ -6,4 +6,4 @@ services:
     environment:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=docker
-      - POSTGRES_DB=connect
+      - POSTGRES_DB=rental_car_api
