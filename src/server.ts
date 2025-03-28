@@ -9,7 +9,6 @@ import {
 } from 'fastify-type-provider-zod'
 import { env } from './env'
 import { accessInviteLinkRoute } from './routes/customer.route'
-// import { accessInviteLinkRoute } from './routes/access-invite-link-route'
 
 const app = fastify()
 
