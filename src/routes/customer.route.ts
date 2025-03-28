@@ -23,12 +23,12 @@ export const accessInviteLinkRoute: FastifyPluginAsyncZod = async app => {
         response: {
           201: z.object({
             id: z.string(),
-            name: z.string().min(3).max(255),
+            name: z.string(),
             email: z.string().email(),
             document: z.string().max(14),
             street: z.string().max(255),
             number: z.string(),
-            neighborhood: z.string().min(3).max(100),
+            neighborhood: z.string().max(100),
             zipcode: z.string().max(8)
           }),
         },
@@ -48,7 +48,7 @@ export const accessInviteLinkRoute: FastifyPluginAsyncZod = async app => {
         zipcode,
       });
 
-      return reply.status(200).send(createdCustomer)
+      return reply.status(201).send(createdCustomer)
     }
   )
 }
