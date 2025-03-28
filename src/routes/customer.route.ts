@@ -48,7 +48,7 @@ export const accessInviteLinkRoute: FastifyPluginAsyncZod = async app => {
         zipcode,
       });
 
-      return reply.status(201).send(createdCustomer)
+      return reply.status(200).send(createdCustomer)
     }
   )
 }
